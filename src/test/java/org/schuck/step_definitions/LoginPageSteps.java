@@ -1,6 +1,5 @@
 package org.schuck.step_definitions;
 
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -12,18 +11,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.schuck.page_objects.LoginPage;
 import org.testng.Assert;
 
-import java.util.List;
-import java.util.Map;
-
+/**
+ * This class represents the steps for the LoginPage feature.
+ * It includes setup and teardown methods, as well as step definitions for the login scenarios.
+ */
 public class LoginPageSteps {
     private WebDriver driver;
     private LoginPage loginPage;
 
+    /**
+     * Setup method to initialize WebDriver before each scenario.
+     */
     @Before
     public void setUp() {
         driver = new ChromeDriver();
     }
 
+    /**
+     * Teardown method to quit WebDriver after each scenario.
+     */
     @After
     public void tearDown() {
         if (driver != null) {
