@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <h3 align="center">Cucumber Java Test Automation/</h3>
-  <img src="images/demo800px.gif" alt="cucumber-java-test-automation/">
+  <img src="images/cucumberTestResult.png" alt="cucumber-java-test-automation/">
   <p>
     <a href="https://github.com/sschuckk/cucumber-java-test-automation//issues">Report Bug</a>
     ·
@@ -12,7 +12,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-TODO
+The objective of this project is to develop basic Web Test Automation using Cucumber as a tool for writing tests in a BDD style (Behavior Driven Development). 
+It also utilizes the POM (Page Object Model) design pattern with Selenium, which can make it easier to improve and update the tests.
+
+This is a basic project. If you want to see a POM design with Page Factory, you can check out this other project: https://github.com/sschuckk/selenium-java-test-automation.
+
+
+
+
 
 
 
@@ -52,51 +59,21 @@ In your terminal go to the project folder and run:
 #### Basic execution:
 
    ```sh
-   mvn clean test
+   mvn test
    ```
-> [!NOTE]
-> This will use the testNG.xml file configuration where:
-> - Run all test case in parallel mode
-> - One browser will be ope for each Test Class
 
 #### Redirect the Maven terminal log to a file for debug purpose:
 
    ```sh
-   mvn clean test --log-file ./mvn-test.log 
+   mvn test --log-file ./target/mvn-test.log 
    ```
 
-#### Enable full debug logging:
-
-   ```sh
-   mvn clean -X test --log-file ./mvn-test.log 
-   ```
-
-### Using surefire-report plugin
-
-#### To generate a html report:
-
- ```sh
- mvn clean surefire-report:report
- ```
-> [!NOTE]
-> The reports will be generated at: target/surefire-reports.
 
 
 <!-- LOGS AND REPORTS -->
-## Logs and Reports:
-
-TODO
-
-### Logs with LOG4J:
-TODO
-
-#### Log sample:
-![logs](images/logs_sample.png)
-
 
 ### Reports:
-If you chose to use the html report option by executing the surefire command, the reports will be generated at: target/surefire-reports.
-Where you can have reports from surefire and from testNG.
 
-Surefire-report sample:
-![logs](images/reports_sample.png)
+After the execution of all tests, a link will be provided where you can click to access an online report, as shown below:
+![Reports](images/cucumberTestExecutionReport.png)
+![Reports](images/cucumberReport.png)
