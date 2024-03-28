@@ -12,8 +12,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The objective of this project is to develop basic Web Test Automation using Cucumber as a tool for writing tests in a BDD style (Behavior Driven Development). 
-It also utilizes the POM (Page Object Model) design pattern with Selenium, which can make it easier to improve and update the tests.
+The objective of this project is to develop a basic Web Test Automation framework using Cucumber as a tool for writing tests in a BDD style (Behavior Driven Development).
+This framework will facilitate the automated testing of web applications, ensuring functionality and performance align with expected behaviors.
+It also utilizes the Page Object Model (POM) design pattern with Selenium, which can simplify the process of enhancing and updating the tests.
 
 
 ```
