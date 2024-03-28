@@ -4,18 +4,25 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
+/**
+ * This class represents the LoginPage of the application under test.
+ * It provides methods to interact with the login page elements.
+ */
 public class LoginPage {
     private WebDriver driver;
 
-    // Locators
-    private By usernameLocator = By.id("user-name");
-    private By passwordLocator = By.id("password");
-    private By loginBtnLocator = By.id("login-button");
-    private By cartBtnLocator = By.xpath("//a[@data-test='shopping-cart-link']");
-    private By inventoryItemLocator = By.className("inventory_item");
-    private By errorMessageLocator = By.xpath("//h3[@data-test='error']");
+    // WebElement Locators
+    private final By usernameLocator = By.id("user-name");
+    private final By passwordLocator = By.id("password");
+    private final By loginBtnLocator = By.id("login-button");
+    private final By cartBtnLocator = By.xpath("//a[@data-test='shopping-cart-link']");
+    private final By inventoryItemLocator = By.className("inventory_item");
+    private final By errorMessageLocator = By.xpath("//h3[@data-test='error']");
 
-    // Constructor
+    /**
+     * Constructor for LoginPage class.
+     * @param driver The WebDriver instance to be used for browser interaction.
+     */
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
